@@ -20,7 +20,7 @@ const pool = new Pool({
   user: "postgres",
   host: "localhost",
   database: "ezymetrics",
-  password: "akshita@123",
+  password: process.env.database_pass,
   port: 5432,
 });
 
