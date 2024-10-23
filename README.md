@@ -19,14 +19,17 @@ json2csv: Converts JSON data to CSV format.
 
 
 
-API Endpoints
-1. Fetch and Store Data
+**API Endpoints**
+Fetch and Store Data
 Endpoint: /crm/leads
 Method: GET
 Description: Fetches dummy CRM data, stores it in the PostgreSQL database, and sends an email alert if the number of leads exceeds the threshold.
+example=http://localhost:8001/crm/leads
 
 
 Generate CSV Report
 Endpoint: /crm/reports/csv
 Method: GET
 Description: Generates a CSV report containing all the stored leads and allows you to download it.
+example=http://localhost:8001/crm/reports/csv
+
